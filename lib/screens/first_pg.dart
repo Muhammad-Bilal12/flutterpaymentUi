@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:payment_app/screens/login_pg.dart';
 
 class FirstPg extends StatelessWidget {
   const FirstPg({Key? key}) : super(key: key);
@@ -17,17 +18,25 @@ class FirstPg extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 180,
+            bottom: 100,
             left: 150,
             child: Column(
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginPg(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    // shadowColor:
+                    shadowColor: Colors.purple,
+                    fixedSize: const Size(200, 40),
                   ),
                   child: const Text(
                     "INSTANT PAY",

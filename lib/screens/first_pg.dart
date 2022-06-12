@@ -14,7 +14,7 @@ class FirstPg extends StatelessWidget {
           ),
           const Center(
             child: Image(
-              image: AssetImage("assets/logo.png"),
+              image: AssetImage("assets/images/logo.png"),
             ),
           ),
           Positioned(

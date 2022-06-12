@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:payment_app/screens/first_pg.dart';
+import 'package:payment_app/screens/login_pg.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
         primaryColor: Color(0xFB8B8B8),
         brightness: Brightness.dark,
       ),
-      home: const FirstPg(),
+      home: LoginPg(),
+      //const FirstPg(),
     );
   }
 }

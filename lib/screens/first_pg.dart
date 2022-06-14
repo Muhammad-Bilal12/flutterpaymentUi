@@ -19,7 +19,7 @@ class FirstPg extends StatelessWidget {
           ),
           Positioned(
             bottom: 100,
-            left: 150,
+            left: 80,
             child: Column(
               children: [
                 ElevatedButton(

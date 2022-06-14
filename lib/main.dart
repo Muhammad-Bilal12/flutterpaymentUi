@@ -13,11 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primaryColor: Color(0xFB8B8B8),
+        primaryColor: Color.fromRGBO(15, 31, 31, 31),
         brightness: Brightness.dark,
       ),
-      home: LoginPg(),
-      //const FirstPg(),
+      home: const FirstPg(),
     );
   }
 }

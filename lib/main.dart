@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:payment_app/screens/first_pg.dart';
+import 'package:payment_app/screens/home.dart';
 import 'package:payment_app/screens/login_pg.dart';
 
 void main(List<String> args) {
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color.fromRGBO(15, 31, 31, 31),
         brightness: Brightness.dark,
       ),
-      home: const FirstPg(),
+      home: const Home(),
     );
   }
 }

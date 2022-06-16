@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import 'home.dart';
+
 class LoginPg extends StatelessWidget {
   const LoginPg({Key? key}) : super(key: key);
 
@@ -54,21 +56,21 @@ class LoginPg extends StatelessWidget {
               child: const TextField(
                 keyboardType: TextInputType.number,
                 textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Color.fromRGBO(77, 93, 250, 1),
+                ),
                 decoration: InputDecoration(
                   filled: true,
                   fillColor: Colors.white,
-
                   prefixText: "+92",
                   prefixStyle: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w700,
                     color: Color.fromRGBO(77, 93, 250, 1),
                   ),
-                  // icon: Icon(Icons.numbers),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
-
                   hintText: "Enter Mobile Number",
                   hintStyle: TextStyle(
                     fontSize: 15,
@@ -82,7 +84,14 @@ class LoginPg extends StatelessWidget {
               height: 10,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Home(),
+                  ),
+                );
+              },
               style: ElevatedButton.styleFrom(
                 fixedSize: const Size(280, 50),
                 shape: RoundedRectangleBorder(
